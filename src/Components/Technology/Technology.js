@@ -4,15 +4,12 @@ import React, { useState } from "react";
 
 import data from '../../Data/data.json'
 
+
 export function Technology() {
 
-  const vehicles = [
-    { id: 1, text: "1" },
-    { id: 2, text: "2" },
-    { id: 3, text: "3" }
-  ];
+  const [index, setIndex] = useState(0);
 
-  const [activeId, setActiveId] = useState(vehicles[0].id);
+  const contents = data.technology[index]
 
   return (
     <>
@@ -21,19 +18,17 @@ export function Technology() {
             <strong>03</strong>
             <span>space launch 101</span>
         </p>
-        <img alt="launch vehicle" />
+        <img src={contents.images.landscape} alt="launch vehicle" />
         <ul className="vehicles">
-          {vehicles.map((vehicle) => (
-            <li className={"circle " + (activeId === vehicle.id ? "active__vehicle" : "") } onClick={() => setActiveId(vehicle.id)}>
-              <div>{vehicle.text}</div>
-            </li>
-          ))}
+          <li className={"circle " + (index === 0 ? "active__vehicle" : "") } onClick={() => setIndex(0)}>1</li>
+          <li className={"circle " + (index === 1 ? "active__vehicle" : "") } onClick={() => setIndex(1)}>2</li>
+          <li className={"circle " + (index === 2 ? "active__vehicle" : "") } onClick={() => setIndex(2)}>3</li>
         </ul>
         <div className="infos">
           <span className="info__title">the technology...</span>
-          <span className="info__type">vehicle name</span>
+          <span className="info__type">{contents.name}</span>
           <div className="description">
-            <p className="text">text</p>
+            <p className="text">{contents.description}</p>
           </div>
         </div>
       </section>

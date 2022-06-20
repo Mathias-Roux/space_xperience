@@ -2,20 +2,14 @@ import './Destination.css'
 
 import React, { useState } from "react";
 
-
 import data from '../../Data/data.json'
 
 
 export function Destination() {
-  const planets = [
-    { id: 1, text: "moon" },
-    { id: 2, text: "mars" },
-    { id: 3, text: "europa" },
-    { id: 4, text: "titan" }
-  ];
-  const [activeId, setActiveId] = useState(planets[0].id);
+  
+  const [index, setIndex] = useState(0);
 
-  const contents = data.destinations[0]
+  const contents = data.destinations[index]
   // console.log(contents)
 
   return (
@@ -27,11 +21,10 @@ export function Destination() {
         </p>
         <img src={contents.images.png} alt="moon" />
         <ul className="planets">
-          {planets.map((planet) => (
-            <li onClick={() => setActiveId(planet.id)}>
-              <div className={activeId === planet.id ? "active__planet" : ""}>{planet.text}</div>
-            </li>
-          ))}
+          <li className={index === 0 ? "active__planet" : ""} onClick={() => setIndex(0)}>moon</li>
+          <li className={index === 1 ? "active__planet" : ""} onClick={() => setIndex(1)}>mars</li>
+          <li className={index === 2 ? "active__planet" : ""} onClick={() => setIndex(2)}>europa</li>
+          <li className={index === 3 ? "active__planet" : ""} onClick={() => setIndex(3)}>titan</li>
         </ul>
         <p className="planet">{contents.name}</p>
         <div className="description">

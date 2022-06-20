@@ -43,14 +43,14 @@
 
 .menu > .list {
 	padding-left: 40px;
+	height: 25vh;
 	list-style-type: none;
 	margin-top: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-.menu > .list li{
-	width: 100%;
-	margin-top: 40px;
-}
 
 .active__menu{
 	border-right: 4px solid white;
@@ -59,7 +59,7 @@
 .menu > .list .link > strong{
 	margin-right: 15px;
 	letter-spacing: 2.7px;
-	font-family: 'Bellefair', sans-serif;
+	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 16px;
 }
 

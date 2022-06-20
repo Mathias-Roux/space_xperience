@@ -35,28 +35,23 @@ export function Navigation() {
             alt="close" 
             onClick={handleToggle}
           />
-          <ul className="list">
-            <li>
-              <NavLink to='./' activeClassName="active__menu" className="link">
-                <strong>00</strong><span>home</span>
-              </NavLink>
-            </li>
-            <li >
-              <NavLink to='./Destination' activeClassName="active__menu" className="link">
-                <strong>01</strong><span>destination</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='./Crew' activeClassName="active__menu" className="link">
-                <strong>02</strong><span>crew</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='./Technology' activeClassName="active__menu" className="link">
-                <strong>03</strong><span>technology</span>
-              </NavLink>
-            </li>
-          </ul>
+          <div className="list">
+            <NavLink to='./' className={({ isActive }) => "link" + (isActive ? " active__menu" : "")}>
+              <strong>00</strong><span>home</span>
+            </NavLink>
+          
+            <NavLink to='./Destination' className={({ isActive }) => "link" + (isActive ? " active__menu" : "")}>
+              <strong>01</strong><span>destination</span>
+            </NavLink>
+          
+            <NavLink to='./Crew' className={({ isActive }) => "link" + (isActive ? " active__menu" : "")}>
+              <strong>02</strong><span>crew</span>
+            </NavLink>
+    
+            <NavLink to='./Technology' className={({ isActive }) => "link" + (isActive ? " active__menu" : "")}>
+              <strong>03</strong><span>technology</span>
+            </NavLink>
+          </div>
       </div>
     </>
   );

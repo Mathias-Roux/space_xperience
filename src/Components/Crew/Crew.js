@@ -5,10 +5,10 @@ import React, { useState } from "react";
 import data from '../../Data/data.json'
 
 
-export function Crew() {
+export function Crew({step: number}) {
   const [index, setIndex] = useState(0);
 
-  const contents = data.crew[0]
+  const contents = data.crew[index]
 
   return (
     <>
