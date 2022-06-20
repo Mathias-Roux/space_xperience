@@ -1,9 +1,8 @@
 import './Crew.css'
 
 import React, { useState } from "react";
-import { divnk } from "react-router-dom";
 
-import data from '../../data.json'
+import data from '../../Data/data.json'
 
 
 export function Crew() {
@@ -18,7 +17,7 @@ export function Crew() {
             <strong>02</strong>
             <span>meet you crew</span>
         </p>
-        <img src={photo} alt={contents.name} />
+        <img src={contents.images.png} alt={contents.name} />
         <ul className="persons">
           <li className={"dot " + (index===0?" active__person":"")} onClick={() => {setIndex(0)}}></li>
           <li className={"dot " + (index===1?" active__person":"")} onClick={() => {setIndex(1)}}></li>

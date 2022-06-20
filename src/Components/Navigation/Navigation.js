@@ -3,9 +3,9 @@ import './Navigation.css'
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import logo from '../assets/shared/logo.svg'
-import icon_hamburger from '../assets/shared/icon-hamburger.svg'
-import icon_close from '../assets/shared/icon-close.svg'
+import logo from '../../Images/logo.svg'
+import icon_hamburger from '../../Images/icon-hamburger.svg'
+import icon_close from '../../Images/icon-close.svg'
 
 export function Navigation() {
 

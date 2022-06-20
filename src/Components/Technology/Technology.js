@@ -2,10 +2,7 @@ import './Technology.css'
 
 import React, { useState } from "react";
 
-
-import vehicle from '../assets/technology/image-launch-vehicle-landscape.jpg'
-import port from '../assets/technology/image-spaceport-landscape.jpg'
-import capsule from '../assets/technology/image-space-capsule-landscape.jpg'
+import data from '../../Data/data.json'
 
 export function Technology() {
 
@@ -24,7 +21,7 @@ export function Technology() {
             <strong>03</strong>
             <span>space launch 101</span>
         </p>
-        <img src={vehicle} alt="launch vehicle" />
+        <img alt="launch vehicle" />
         <ul className="vehicles">
           {vehicles.map((vehicle) => (
             <li className={"circle " + (activeId === vehicle.id ? "active__vehicle" : "") } onClick={() => setActiveId(vehicle.id)}>

@@ -1,14 +1,9 @@
 import './Destination.css'
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
-import moon from '../assets/Destination/image-moon.png'
-import mars from '../assets/Destination/image-mars.png'
-import europa from '../assets/Destination/image-europa.png'
-import titan from '../assets/Destination/image-titan.png'
 
-import data from '../../data.json'
+import data from '../../Data/data.json'
 
 
 export function Destination() {
@@ -30,7 +25,7 @@ export function Destination() {
             <strong>01</strong>
             <span>pick your destination</span>
         </p>
-        <img src={moon} alt="moon" />
+        <img src={contents.images.png} alt="moon" />
         <ul className="planets">
           {planets.map((planet) => (
             <li onClick={() => setActiveId(planet.id)}>
