@@ -1,0 +1,45 @@
+@import './Components/Navigation.css';
+@import './Components/Home.css';
+@import './Components/Destination.css';
+@import './Components/Crew.css';
+@import './Components/Technology.css';
+
+@import url('http://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('http://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
+
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  cursor: default;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    overflow-x: hidden;
+
+    /*font-family: 'Bellefair', serif;*/
+    /*font-family: 'Barlow', sans-serif;*/
+  /*font-family: 'Barlow Condensed', sans-serif;*/
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited{
+  color: white;
+}
