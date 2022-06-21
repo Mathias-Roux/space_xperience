@@ -15,30 +15,47 @@ export function Destination() {
   return (
     <>
       <section className="destination">
-        <p className="line">
+
+        <div className="title__wrap">
+          <p className="title">
             <strong>01</strong>
             <span>pick your destination</span>
-        </p>
-        <img src={contents.images.png} alt="moon" />
-        <ul className="planets">
-          <li className={index === 0 ? "active__planet" : ""} onClick={() => setIndex(0)}>moon</li>
-          <li className={index === 1 ? "active__planet" : ""} onClick={() => setIndex(1)}>mars</li>
-          <li className={index === 2 ? "active__planet" : ""} onClick={() => setIndex(2)}>europa</li>
-          <li className={index === 3 ? "active__planet" : ""} onClick={() => setIndex(3)}>titan</li>
-        </ul>
-        <p className="planet">{contents.name}</p>
-        <div className="description">
-          <p className="text">{contents.description}</p>
+          </p> 
         </div>
-        <div className="hr"></div>
-        <div className="infos">
-          <p className="info__title">avg. distance</p>
-          <span className="info__number">{contents.distance}</span>
+
+        <div className="content">
+          <div className="destination__left">
+            <img src={contents.images.png} alt={contents.name} />
+          </div>
+
+          <div className="destination__right">
+            <ul className="planets">
+              <li className={index === 0 ? "active__planet" : ""} onClick={() => setIndex(0)}>moon</li>
+              <li className={index === 1 ? "active__planet" : ""} onClick={() => setIndex(1)}>mars</li>
+              <li className={index === 2 ? "active__planet" : ""} onClick={() => setIndex(2)}>europa</li>
+              <li className={index === 3 ? "active__planet" : ""} onClick={() => setIndex(3)}>titan</li>
+            </ul>
+
+            <p className="planet">{contents.name}</p>
+
+            <p className="destination__description">{contents.description}</p>
+
+            <div className="hr"></div>
+
+            <div className="destination__infos">
+              <div className="destination__infos--frame">
+                <p className="info__title">avg. distance</p>
+                <span className="info__number">{contents.distance}</span>
+              </div>
+              
+              <div className="destination__infos--frame">
+                <p className="info__title">est. travel time</p>
+                <span className="info__number">{contents.travel}</span>
+              </div>   
+            </div>
+          </div>
         </div>
-        <div className="infos">
-          <p className="info__title">est. travel time</p>
-          <span className="info__number">{contents.travel}</span>
-        </div>
+        
       </section>
     </>
   );

@@ -2,7 +2,7 @@
 	background-image: url('../../Images/background-destination-mobile.jpg');
 	padding-top: 135px;
 	background-position: center;
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-size: cover;
 
 	
@@ -10,21 +10,21 @@
 	text-align: center;
 }
 
-.destination > .line{
+.title__wrap > .title{
 	font-family: 'Barlow Condensed', sans-serif;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: clamp(16px, 2vw, 28px);
 	letter-spacing: 2.7px;
 	margin-bottom: 40px;
 }
 
-.destination > .line strong{
+.title__wrap > .title strong{
 	color: grey;
 	margin-right: 12px;
 }
 
-.destination > img{
-	width: 170px;
+.destination__left > img{
+	width: clamp(170px, 25vw, 445px);
 	margin-bottom: 30px;
 }
 
@@ -46,7 +46,6 @@
 	cursor: pointer;
 }
 
-
 .active__planet{
 	color: white !important;
 	font-weight: bold;
@@ -55,26 +54,17 @@
 
 .planet{
 	font-family: 'Bellefair', sans-serif;
-	font-size: 56px;
+	font-size: clamp(56px, 8vw, 100px);
 	text-transform: uppercase;
 }
 
-.description{
-	text-align: center;
+.destination__description{
 	font-family: 'Barlow', sans-serif;
 	color: #D0D6F9;
 	font-size: 15px;
 	line-height: 25px;
-}
-
-.description > .line{
-	color: #D0D6F9;
-	font-size: 15px;
-	line-height: 25px;
-}
-
-.description > .line:last-of-type{
-	margin-bottom: 40px;
+	width: 72%;
+	margin: 0 auto 20px auto;
 }
 
 .hr{
@@ -84,12 +74,12 @@
 	background-color: #383B4B;
 }
 
-.infos{
-	padding-top: 40px;
+.destination__infos{
+	margin-top: 30px;
 }
 
-.infos:last-of-type{
-	padding-bottom: 40px;
+.destination__infos--frame{
+	padding-bottom: 35px;
 }
 
 .info__title{
@@ -105,6 +95,69 @@
 	font-size: 28px;
 	text-transform: uppercase;
 }
+
+
+
+@media screen and (min-width: 53em){
+	.destination{
+		padding-top: 150px;
+		background-image: url('../../Images/background-destination-desktop.jpg');
+		text-align: left;
+		height: 100vh;
+	}
+
+	.title__wrap{
+		padding-left: 15vw;
+	}
+
+	.content{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.destination__left{
+		width: 40vw;
+		padding-left: 7%;
+	}
+
+	.destination__left > img{
+		margin-bottom: 0;
+	}
+
+	.destination__right{
+		width: 370px;
+	}
+
+	.planets{
+		justify-content: space-between;
+		margin: 0;
+		margin-bottom: 37px;
+	}
+
+	.planets > li{
+		letter-spacing: 2.7px;
+	}
+
+	.hr{
+		width: 100%;
+	}
+
+	.destination__infos{
+		display: flex;
+		margin-top: 30px;
+	}
+
+	.destination__infos--frame:first-of-type{
+		margin-right: 55px;
+	}
+
+}
+
+
+
+
+
+
 
 
 

@@ -7,7 +7,7 @@ export function Home() {
   return (
     <>
       <section className="home">
-        <div className="left">
+        <div className="home__left">
           <p className="line"><span className="inner__line">so, you want to reavel to</span></p>
           <p className="line"><span className="inner__line">space</span></p>
           <p className="line">
@@ -17,7 +17,7 @@ export function Home() {
             <span className="inner__line">a truly out this world experience!</span>
           </p>
         </div>
-        <div className="right">
+        <div className="home__right">
           <div className="btn-round">
             <Link to={"./Destination"} className="btn-explore">explore</Link>
           </div>

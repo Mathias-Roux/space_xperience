@@ -14,7 +14,7 @@ export function Technology() {
   return (
     <>
       <section className="technology">
-        <p className="line">
+        <p className="title">
             <strong>03</strong>
             <span>space launch 101</span>
         </p>

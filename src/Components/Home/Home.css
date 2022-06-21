@@ -9,17 +9,17 @@
 	width: 100vw;
 }
 
-.left, .right{
+.home__left, .home__right{
 	width: 60vw;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.left{
+.home__left{
 	max-width: 500px;
 }
 
-.left > p:nth-of-type(1){
+.home__left > p:nth-of-type(1){
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: clamp(16px, 2vw, 28px);
 	color: #D0D6F9;
@@ -28,21 +28,21 @@
 	letter-spacing: 2.7px;
 }
 
-.left > p:nth-of-type(2){
+.home__left > p:nth-of-type(2){
 	text-transform: uppercase;
 	font-family: 'Bellefair', sans-serif;
 	font-size: clamp(80px, 10vw, 150px);
 	margin-bottom: 16px;
 }
 
-.left > p:nth-of-type(3){
+.home__left > p:nth-of-type(3){
 	line-height: 25px;
 	font-size: clamp(15px, 2vw, 18px);
 	font-family: 'Barlow', sans-serif;
 	color: #D0D6F9;
 }
 
-.right{
+.home__right{
 	margin-top: 60px;
 	background-color: white;
 	color: black;
@@ -74,11 +74,11 @@
 		background-image: url('../../Images/background-home-desktop.jpg');
 	}
 
-	.left, .right{
+	.home__left, .home__right{
 		text-align: left;
 	}
 
-	.right{
+	.home__right{
 		margin-top: 110px;
 	}
 

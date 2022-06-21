@@ -10,7 +10,7 @@
 	text-align: center;
 }
 
-.crew > .line{
+.crew > .title{
 	font-family: 'Barlow Condensed', sans-serif;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -18,7 +18,7 @@
 	margin-bottom: 40px;
 }
 
-.crew > .line strong{
+.crew > .title strong{
 	color: grey;
 	margin-right: 12px;
 }

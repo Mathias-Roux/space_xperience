@@ -13,7 +13,7 @@ export function Crew({step: number}) {
   return (
     <>
       <section className="crew">
-        <p className="line">
+        <p className="title">
             <strong>02</strong>
             <span>meet you crew</span>
         </p>
