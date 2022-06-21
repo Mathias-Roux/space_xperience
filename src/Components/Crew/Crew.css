@@ -1,30 +1,20 @@
 .crew{
-	background-image: url('../../Images/background-destination-mobile.jpg');
+	background-image: url('../../Images/background-crew-mobile.jpg');
 	padding-top: 135px;
 	background-position: center;
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-size: cover;
 
 	
 	width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+
 	text-align: center;
 }
 
-.crew > .title{
-	font-family: 'Barlow Condensed', sans-serif;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 2.7px;
-	margin-bottom: 40px;
-}
-
-.crew > .title strong{
-	color: grey;
-	margin-right: 12px;
-}
-
-.crew > img{
-	width: 327px;
+.crew__left > img{
+	height: 230px;
 	border-bottom: 1px solid #383B4B;
 }
 
@@ -39,8 +29,8 @@
 }
 
 .persons > .dot {
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
 	background-color: white;
 	opacity: 17.44%;
@@ -57,9 +47,14 @@
 	flex-direction: column;
 }
 
+.crew__infos{
+	display: flex;
+	flex-direction: column;
+}
+
 .info__role{
 	font-family: 'Bellefair', sans-serif;
-	font-size: 16px;
+	font-size: clamp(16px, 3vw, 32px);
 	opacity: 49.51%;
 	text-transform: uppercase;
 	margin-bottom: 8px;
@@ -67,24 +62,80 @@
 
 .info__names{
 	font-family: 'Bellefair', sans-serif;
-	font-size: 24px;
+	font-size: clamp(24px, 3vw, 56px);
 	text-transform: uppercase;
 }
 
-.description{
+.crew__bio{
 	text-align: center;
 	font-family: 'Barlow', sans-serif;
 	color: #D0D6F9;
-	font-size: 15px;
+	font-size: clamp(15px, 2vw, 18px);
 	line-height: 25px;
-	margin-top: 16px;
+	margin: 16px auto;
+	width: 72%;
 }
 
-.description > .line{
-	color: #D0D6F9;
-	font-size: 15px;
-	line-height: 25px;
+
+@media screen and (min-width: 53em){
+	.crew{
+		background-image: url('../../Images/background-crew-desktop.jpg');
+		padding-top: 135px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		text-align: left;
+	}
+
+	.crew__content{
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 15vw;
+	}
+
+	.crew__right{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		width: 50%;
+	}
+
+	.crew__left{
+		width: 50%;
+	}
+
+	.crew__left > img{
+		border-bottom: none;
+		position: absolute;
+		bottom: 0;
+		left: 55%;
+		height: 601px;
+	}
+
+	.info__role{
+		margin-bottom: 15px;
+	}
+
+	.info__names{
+		margin-bottom: 27px;
+	}
+
+	.crew__bio{
+		text-align: left;
+		margin: 0;
+		margin-bottom: 100px;
+	}
+
+	.persons{
+		margin: 0;
+	}
 }
+
+
+
+
+
 
 
 

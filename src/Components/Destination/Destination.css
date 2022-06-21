@@ -108,6 +108,7 @@
 
 	.title__wrap{
 		padding-left: 15vw;
+		text-align: left;
 	}
 
 	.content{
@@ -118,6 +119,11 @@
 	.destination__left{
 		width: 40vw;
 		padding-left: 7%;
+	}
+
+	.destination__description{
+		margin: 0 0 20px 0;
+		width: 85%;
 	}
 
 	.destination__left > img{
