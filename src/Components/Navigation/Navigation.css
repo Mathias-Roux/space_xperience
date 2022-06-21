@@ -27,6 +27,7 @@
 	height: 100%;
 	backdrop-filter: blur(81.55px);
 	-webkit-backdrop-filter: blur(81.55px);
+	background-color: rgb(151, 151, 151, 0.04);
 	transform: translate3d(100%, 0px, 0px);
 	padding-top: 55px;
 }
@@ -83,8 +84,6 @@
 		-webkit-backdrop-filter: blur(81.55px);
 		transform: translate3d(0px, 0px, 0px);
 		padding-top: 34px;
-		background-color: rgb(151, 151, 151, 0.04);
-
 	}
 
 	.menu > .close{
