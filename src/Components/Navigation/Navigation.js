@@ -21,6 +21,7 @@ export function Navigation() {
         <Link to={'./'}>
            <img src={logo} alt="logo" />
         </Link>
+        <div className="hr"></div>
         <img 
           className="burger"
           src={icon_hamburger}

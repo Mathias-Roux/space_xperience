@@ -16,6 +16,7 @@
 .crew__left > img{
 	height: 230px;
 	border-bottom: 1px solid #383B4B;
+	z-index: 100;
 }
 
 .persons{
@@ -98,11 +99,12 @@
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
-		width: 50%;
+		width: 70%;
+		padding-top: 70px;
 	}
 
 	.crew__left{
-		width: 50%;
+		width: 30%;
 	}
 
 	.crew__left > img{
