@@ -15,7 +15,6 @@
 	text-transform: uppercase;
 	font-size: clamp(16px, 2vw, 28px);
 	letter-spacing: 2.7px;
-	margin-bottom: 40px;
 }
 
 .title__wrap > .title strong{
@@ -25,7 +24,7 @@
 
 .destination__left > img{
 	width: clamp(170px, 25vw, 445px);
-	margin-bottom: 30px;
+	margin: 30px 0;
 }
 
 .planets{

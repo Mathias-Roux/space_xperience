@@ -13,10 +13,6 @@
 	text-align: center;
 }
 
-.technology__content{
-	padding-bottom: 50px;
-}
-
 .technology__left{
 	width: 100vw;
 }
@@ -95,10 +91,16 @@
 
 	.technology__left{
 		width: 35%;
+		height: 517px;
+		position: relative;
 	}
 
 	.technology__left > img{
 		margin-bottom: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
 	}
 
 	.technology__right{
