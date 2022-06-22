@@ -62,7 +62,7 @@
 
 .info__names{
 	font-family: 'Bellefair', sans-serif;
-	font-size: clamp(24px, 3vw, 56px);
+	font-size: clamp(24px, 4vw, 56px);
 	text-transform: uppercase;
 }
 
