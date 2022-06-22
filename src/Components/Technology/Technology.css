@@ -114,6 +114,10 @@
 		margin: auto 0;
 	}
 
+	.vehicles > .circle:not(.active__vehicle):hover {
+		border: 1px solid white;
+	}
+
 	.infos{
 		text-align: left;
 		justify-content: center;

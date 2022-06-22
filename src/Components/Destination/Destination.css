@@ -144,6 +144,10 @@
 		letter-spacing: 2.7px;
 	}
 
+	.planets > li:not(.active__planet):hover {
+		border-bottom: 3px solid grey;
+	}
+
 	.hr{
 		width: 100%;
 	}

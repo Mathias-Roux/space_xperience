@@ -52,7 +52,7 @@
 }
 
 .active__menu{
-	border-right: 4px solid white;
+	border-right: 3px solid white;
 }
 
 .menu > .list .link > strong{
@@ -100,8 +100,12 @@
 	}
 
 	.active__menu{
-		border-bottom: 4px solid white;
+		border-bottom: 3px solid white;
 		border-right: none;
+	}
+
+	.link:not(.active__menu):hover {
+		border-bottom: 3px solid grey;
 	}
 
 }

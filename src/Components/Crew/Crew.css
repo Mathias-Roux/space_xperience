@@ -130,6 +130,10 @@
 	.persons{
 		margin: 0;
 	}
+
+	.dot:not(.active__person):hover {
+		opacity: 50.01%;
+	}
 }
 
 
